@@ -17,20 +17,12 @@ public class EventsPage extends BasePage {
     private By eventLocation = By.name("location");
     private By eventDescription = By.name("description");
     private By createEventButton = By.xpath("//*[@id=\"root\"]/div/div[1]/main/div[2]/form/div/button");
-
     private By firstEventImage = By.xpath("//*[@id=\"root\"]/div/div/main/div[2]/ul/li");
-
     private By eventList = By.xpath("//*[@id=\"root\"]/div/div/main/div[2]/ul");
-
     private By eventListWhenLoggedIn = By.xpath("//*[@id=\"root\"]/div/div[1]/main/div[2]/ul");
 
     public EventsPage(WebDriver driver){
         super(driver);
-    }
-
-    @Override
-    public CreateUserLoginPage newInstance(WebDriver driver) {
-        return new CreateUserLoginPage(driver);
     }
 
     public void hoverPlusButton(){

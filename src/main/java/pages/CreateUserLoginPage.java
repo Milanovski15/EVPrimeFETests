@@ -8,8 +8,6 @@ import java.util.List;
 
 public class CreateUserLoginPage extends BasePage{
 
-    //private WebDriver driver;
-
     private By formTitle = By.xpath("//*[@id=\"root\"]/div/div/main/div[2]/div/div/form/div/div[1]");
     private By emailTextBox = By.name("email");
     private By passwordTextBox = By.name("password");
@@ -20,11 +18,6 @@ public class CreateUserLoginPage extends BasePage{
 
     public CreateUserLoginPage(WebDriver driver){
         super(driver);
-    }
-
-    @Override
-    public CreateUserLoginPage newInstance(WebDriver driver) {
-        return new CreateUserLoginPage(driver);
     }
 
     public void insertEmail(String email){

@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class SidePanel extends BasePage{
 
-    //private WebDriver driver;
-
     private By menuIcon = By.xpath("//*[@id=\"root\"]/div/div/header/div/button");
     private By homeButton = By.xpath("//*[@id=\"root\"]/div/div/div/div/div/ul/li[1]/div/div[2]/span");
     private By eventsButton = By.xpath("//*[@id=\"root\"]/div/div/div/div/div/ul/li[2]/div/div[2]/span");
@@ -16,11 +14,6 @@ public class SidePanel extends BasePage{
 
     public SidePanel(WebDriver driver){
         super(driver);
-    }
-
-    @Override
-    public CreateUserLoginPage newInstance(WebDriver driver) {
-        return new CreateUserLoginPage(driver);
     }
 
     public void clickMenuIcon(){

@@ -15,8 +15,6 @@ public abstract class BasePage {
         actions = new Actions(driver);
     }
 
-    public abstract BasePage newInstance(WebDriver driver);
-
     public void navigateTo(String url) {
         driver.get(url);
     }

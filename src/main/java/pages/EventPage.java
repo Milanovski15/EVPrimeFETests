@@ -20,11 +20,6 @@ public class EventPage extends BasePage {
         super(driver);
     }
 
-    @Override
-    public CreateUserLoginPage newInstance(WebDriver driver) {
-        return new CreateUserLoginPage(driver);
-    }
-
     public String getEventTitle(){
         return getTextFromElement(eventTitle);
     }
